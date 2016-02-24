@@ -42,7 +42,7 @@
             <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_object" id="18">
-                <field name="OBJECT">LEFTFRONT</field>
+                <field name="OBJECT">LEFTSIDE</field>
               </block>
             </value>
             <value name="B">
@@ -55,9 +55,9 @@
         <statement name="DO1">
           <block type="movement_right" id="7">
             <next>
-              <block type="robot_delay" id="46" inline="true">
+              <block type="robot_delay" id="95" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="48">
+                  <block type="math_number" id="96">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
@@ -66,26 +66,26 @@
           </block>
         </statement>
         <value name="IF2">
-          <block type="logic_compare" id="49" inline="true">
-            <field name="OP">LT</field>
+          <block type="logic_compare" id="82" inline="true">
+            <field name="OP">GT</field>
             <value name="A">
-              <block type="sensor_object" id="50">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="sensor_object" id="83">
+                <field name="OBJECT">RIGHTSIDE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="51">
+              <block type="math_number" id="84">
                 <field name="NUM">50</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_left" id="61">
+          <block type="movement_left" id="94">
             <next>
-              <block type="robot_delay" id="62" inline="true">
+              <block type="robot_delay" id="99" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="63">
+                  <block type="math_number" id="100">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
@@ -98,5 +98,12 @@
         </statement>
       </block>
     </statement>
+  </block>
+  <block type="robot_delay" id="97" inline="true" x="152" y="159">
+    <value name="DELAY">
+      <block type="math_number" id="98">
+        <field name="NUM">2000</field>
+      </block>
+    </value>
   </block>
 </xml>
