@@ -99,11 +99,4 @@
       </block>
     </statement>
   </block>
-  <block type="robot_delay" id="97" inline="true" x="152" y="159">
-    <value name="DELAY">
-      <block type="math_number" id="98">
-        <field name="NUM">2000</field>
-      </block>
-    </value>
-  </block>
 </xml>
