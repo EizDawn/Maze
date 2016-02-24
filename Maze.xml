@@ -25,7 +25,17 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="5">
+          <block type="movement_setmotors" id="157" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="160">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="161">
+                <field name="NUM">0</field>
+              </block>
+            </value>
             <next>
               <block type="robot_delay" id="45" inline="true">
                 <value name="DELAY">
@@ -53,7 +63,17 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_right" id="7">
+          <block type="movement_setmotors" id="158" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="162">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="163">
+                <field name="NUM">0</field>
+              </block>
+            </value>
             <next>
               <block type="robot_delay" id="95" inline="true">
                 <value name="DELAY">
@@ -81,7 +101,17 @@
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_left" id="94">
+          <block type="movement_setmotors" id="159" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="164">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="165">
+                <field name="NUM">100</field>
+              </block>
+            </value>
             <next>
               <block type="robot_delay" id="99" inline="true">
                 <value name="DELAY">
