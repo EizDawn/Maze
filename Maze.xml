@@ -98,5 +98,8 @@
         </statement>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="116"></block>
+    </next>
   </block>
 </xml>
