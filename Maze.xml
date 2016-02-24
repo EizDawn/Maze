@@ -2,44 +2,44 @@
   <block type="controls_whileUntil" id="1" inline="false" x="49" y="28">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="34">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="2" inline="false">
+      <block type="controls_if" id="3" inline="false">
         <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="3" inline="true">
+          <block type="logic_compare" id="4" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="4">
+              <block type="sensor_object" id="5">
                 <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="16">
+              <block type="math_number" id="6">
                 <field name="NUM">75</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_setmotors" id="157" inline="true">
+          <block type="movement_setmotors" id="7" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_number" id="160">
+              <block type="math_number" id="8">
                 <field name="NUM">100</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="161">
+              <block type="math_number" id="9">
                 <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="45" inline="true">
+              <block type="robot_delay" id="10" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="47">
+                  <block type="math_number" id="11">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
@@ -48,36 +48,36 @@
           </block>
         </statement>
         <value name="IF1">
-          <block type="logic_compare" id="17" inline="true">
+          <block type="logic_compare" id="12" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="18">
+              <block type="sensor_object" id="13">
                 <field name="OBJECT">LEFTSIDE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="19">
+              <block type="math_number" id="14">
                 <field name="NUM">50</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_setmotors" id="158" inline="true">
+          <block type="movement_setmotors" id="15" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_number" id="162">
+              <block type="math_number" id="16">
                 <field name="NUM">100</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="163">
+              <block type="math_number" id="17">
                 <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="95" inline="true">
+              <block type="robot_delay" id="18" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="96">
+                  <block type="math_number" id="19">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
@@ -86,36 +86,36 @@
           </block>
         </statement>
         <value name="IF2">
-          <block type="logic_compare" id="82" inline="true">
+          <block type="logic_compare" id="20" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="83">
+              <block type="sensor_object" id="21">
                 <field name="OBJECT">RIGHTSIDE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="84">
+              <block type="math_number" id="22">
                 <field name="NUM">50</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_setmotors" id="159" inline="true">
+          <block type="movement_setmotors" id="23" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_number" id="164">
+              <block type="math_number" id="24">
                 <field name="NUM">0</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="165">
+              <block type="math_number" id="25">
                 <field name="NUM">100</field>
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="99" inline="true">
+              <block type="robot_delay" id="26" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="100">
+                  <block type="math_number" id="27">
                     <field name="NUM">2000</field>
                   </block>
                 </value>
@@ -124,12 +124,12 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="9"></block>
+          <block type="movement_forward" id="28"></block>
         </statement>
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="116"></block>
+      <block type="movement_stop" id="29"></block>
     </next>
   </block>
 </xml>
