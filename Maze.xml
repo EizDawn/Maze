@@ -71,7 +71,18 @@
               </block>
             </value>
             <next>
-              <block type="movement_forward" id="46"></block>
+              <block type="movement_setmotors" id="57" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="59">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="58">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+              </block>
             </next>
           </block>
         </statement>
